@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "records": {
+    "checkup": {
+      "date": "2026-11-26",
+      "plugin": "26.11.1"
+    }
+  },
+  "guards": {
+    "branch": true,
+    "conflictMarkers": true
+  }
+}
