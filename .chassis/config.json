@@ -6,6 +6,10 @@
       "plugin": "26.11.1"
     }
   },
+  "versions": {
+    "chassis": "26.11.1",
+    "openspec": "2.2.0"
+  },
   "guards": {
     "branch": true,
     "conflictMarkers": true
