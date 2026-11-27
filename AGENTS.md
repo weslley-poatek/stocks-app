@@ -12,7 +12,17 @@ An iOS and Android app for browsing B3 stocks from the InvestingData API. Built 
 
 ## Commands
 
-None yet: the repo has no package.json. When the scripts exist, list each one here with what it does and when to run it locally.
+Run everything from the repo root with npm.
+
+- `npm run typecheck`: `tsc --noEmit` in strict mode. Run it after any code change.
+- `npm run lint`: `expo lint` (ESLint with `eslint-config-expo`). Run it before handing work over.
+- `npm test`: Jest with the `jest-expo` preset and React Native Testing Library. Run it after any code change.
+- Quality gate: `npm run typecheck && npm run lint && npm test`. Run it before every commit.
+- `npm run ios`: `expo run:ios`. Generates `ios/` (gitignored), builds the development build and installs it on a simulator. Needs Xcode. Run it on the first setup and after adding or upgrading a native dependency.
+- `npm run android`: `expo run:android`. The same for Android. Needs the Android SDK and an emulator or device.
+- `npm start`: `expo start --dev-client`. Starts Metro for an installed development build. Run it day to day, since JS changes reload without a native rebuild. Press `i` or `a` to open the build, or use the `exp+stocks-app://` link.
+
+The app is a development build, not Expo Go, because react-native-mmkv is native. `ios/` and `android/` are generated: never edit them by hand, and delete them to regenerate.
 
 ## Layout
 

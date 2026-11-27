@@ -9,5 +9,8 @@
   "guards": {
     "branch": true,
     "conflictMarkers": true
+  },
+  "gate": {
+    "command": "npm run typecheck && npm run lint && npm test"
   }
 }
