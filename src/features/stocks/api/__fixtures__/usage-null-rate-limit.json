@@ -1,0 +1,24 @@
+{
+  "key_prefix": "idk_a1b2",
+  "role": "free",
+  "tier": 1,
+  "rate_limit": null,
+  "history": {
+    "range": "24h",
+    "requests": [
+      {
+        "bucket": "2026-11-26T00:00:00.000Z",
+        "total": 120,
+        "errors": 2
+      }
+    ],
+    "by_endpoint": [
+      {
+        "endpoint": "GET /v1/tickers/{symbol}/price",
+        "total": 40,
+        "errors": 0
+      }
+    ],
+    "latency_ms": null
+  }
+}
